@@ -1,0 +1,80 @@
+The operations that the line editor has been designed to perform and the input commands to be given to prompt each operation are:
+
+1. Insert a line with line number.
+
+Command: 10 let a=5 (Note: a space must be given between the line number and the line)
+
+Effect: inserts the line “let a=5” in the editor at the appropriate position
+
+(Insertion may be done at any position, not necessarily at the end of the document only, may also be done between two lines, for example to insert a line between line no.#10 and line no.#20, required input to be given by user is “17 new line” so that “new line” is stored at position 17 i.e. A number between 10 and 20)
+
+
+2. Edit a line with line number.
+
+Command: (Suppose line no.#25 is “let c=a+b” and we wish to change line no.#25 to
+
+“let c=a-b”)
+
+command to be input by user is: 25 let c=a-b (Note: a space must be given
+
+between line number and line)
+
+Effect: Replaces line no.#25 containing “let c=a+b” to line no.#25 containing “let c=a-b”.
+
+
+3. Delete a line with line number
+
+Command: 10 (Note: No space to be given after line number, only number to be provided)
+
+Effect: deletes line no.#10 from the editor
+
+
+4. Renumber the line numbers as consecutive multiples of 10. If all the integers between 10 and 20 are filled up and we wish to insert more lines in between lines 10 and 20, we have to renumber the lines so that there are differences of 10 between every consecutive line numbers and more lines can be inserted.
+
+For example let the line numbers be 10,11,12,13,14,20 and we wish to insert a line between 10 and 11.
+
+Command: r (Note: No space required, only press enter after “r”)
+
+Effect: line numbers now stand as: 10,20,30,40,50,60 without changing the contents
+
+
+5. Print all lines in the editor
+
+Command: l (Note: No space required, only press enter after “l”)
+
+Effect: Prints the lines with their line numbers one after another.
+
+6. Create a new file with extension .BAS
+
+Command: create file1
+
+Effect: creates file1.BAS in the directory where linEd.c is stored
+
+
+7. Open an old file with extension .BAS
+
+Command: open file1
+
+Effect: opens file1.BAS in the directory where linEd.c is stored.
+
+
+8. Save a file with extension .BAS
+
+Command: save file1
+
+Effect: saves contents of the editor in file1.BAS in the directory.
+
+
+9. Delete a file with extension .BAS
+
+Command: remove file1
+
+Effect: deletes file1.BAS
+
+
+To exit the editor user has to enter “exit” and press enter.
+
+
+If one wishes to open a new file and edit it, user has to open it in the editor first and then edit the file.
+
+Also if user wishes to create a new file and save it, he/she has to create it using the create command and then save the file. 
