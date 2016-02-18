@@ -78,3 +78,9 @@ To exit the editor user has to enter “exit” and press enter.
 If one wishes to open a new file and edit it, user has to open it in the editor first and then edit the file.
 
 Also if user wishes to create a new file and save it, he/she has to create it using the create command and then save the file. 
+
+
+
+How to install and run:
+To install, from the terminal window in the present directory, do "make"
+To run, from terminal window in present directory, do "./linEd"
